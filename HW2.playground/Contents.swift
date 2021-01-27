@@ -7,7 +7,7 @@ import UIKit
  */
 var num1: Float = 2.54
 var num2: Float = 4.24
-var sum: Double = Double(num1) + Double(num2)
+var sum = Double(num1 + num2)
 
 print(sum)
 /*
@@ -51,12 +51,11 @@ print("new: \(quantity) MacBook Pro with the price of: \(price) EUR, will cost y
  Fix this Fatal error inside the if-else statements to print whenever this age can be converted to Int or not!
  */
 var userInputAge = "33a"
-var convertToInt = Int(userInputAge)
 
-if convertToInt == nil {
-    print("Value is non-convertible")
+if let convertToInt = Int(userInputAge) {
+    print(convertToInt)
 } else {
-    print(convertToInt!)
+    print("Value is non-convertible")
 }
 /*
  Ex5:

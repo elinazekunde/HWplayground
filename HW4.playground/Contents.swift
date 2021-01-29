@@ -51,14 +51,22 @@ print("Total amount of cash in the wallet is \(totalCash) euros.")
  Run the func.
  */
 
-func isEvenNumber(number: Int) -> Bool {
-    if number % 2 == 0 {
-        return true
-    } else {
-        return false
-    }
-}
+// ----------------- Method #1 -----------------
+//func isEvenNumber(number: Int) -> Bool {
+//    if number % 2 == 0 {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
+//isEvenNumber(number: 41)
 
+// ----------------- Method #2 -----------------
+func isEvenNumber(number: Int) -> Bool {
+    guard number % 2 == 0 else { return false }
+        return true
+
+}
 isEvenNumber(number: 41)
 
 /*
